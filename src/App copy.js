@@ -1,28 +1,10 @@
+import { ShoppingCart } from "phosphor-react";
 import data from "./components/data";
-import ProductCard from "./components/ProductCard";
 
 function App() {
   return (
     <div className="App  px-4">
-      {data.map((product) => (
-        <ProductCard
-          key={product.name}
-          category={product.category}
-          name={product.name}
-          description={product.description}
-          discountedPrice={product.discountedPrice}
-          originalPrice={product.originalPrice}
-          heroMobile={product.heroMobile}
-          heroDesktop={product.heroDesktop}
-        />
-      ))}
-    </div>
-  );
-}
-
-export default App;
-
-/* <div className="bg-white mx-auto max-w-[600px] overflow-hidden rounded-xl lg:flex">
+      <div className="bg-white mx-auto max-w-[600px] overflow-hidden rounded-xl lg:flex">
         <img
           src="images/image-product-mobile.jpg"
           className="object-cover lg:hidden"
@@ -60,4 +42,9 @@ export default App;
             <span className="text-sm pl-2">Add to Cart</span>
           </div>
         </div>
-      </div> */
+      </div>
+    </div>
+  );
+}
+
+export default App;
