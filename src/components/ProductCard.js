@@ -6,6 +6,7 @@ export default function ProductCard({
   name,
   description,
   discountedPrice,
+  originalPrice,
   heroMobile,
   heroDesktop,
 }) {
@@ -33,11 +34,11 @@ export default function ProductCard({
         </p>
         <div className="mt-4 mb-[.6rem] lg:mt-5 lg:mb-6 grid gap-0 lg:gap-12 grid-cols-2">
           <span className="text-[#3c5e52] text-[2rem] font-fraunces">
-            {discountedPrice}
+            ${discountedPrice}
           </span>
 
           <span className="font-montserrat line-through text-gray-500 text-sm pt-4 ">
-            $169.99
+            ${originalPrice}
           </span>
         </div>
         <div className="font-montserrat rounded-md bg-[#3c5e52] text-white  w-full p-3 text-center">
