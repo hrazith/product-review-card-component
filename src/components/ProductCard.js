@@ -33,7 +33,7 @@ export default function ProductCard({
           {description}
         </p>
         <div className="mt-4 mb-[.6rem] lg:mt-5 lg:mb-6 grid gap-0 lg:gap-12 grid-cols-2">
-          <span className="text-[#3c5e52] text-[2rem] font-fraunces">
+          <span className="primary text-[2rem] font-fraunces">
             ${discountedPrice}
           </span>
 
@@ -41,7 +41,7 @@ export default function ProductCard({
             ${originalPrice}
           </span>
         </div>
-        <div className="font-montserrat rounded-md bg-[#3c5e52] text-white  w-full p-3 text-center">
+        <div className="font-montserrat rounded-md brand-primary text-white  w-full p-3 text-center">
           {" "}
           <ShoppingCart size={18} className="inline-block" />
           <span className="text-sm pl-2">Add to Cart</span>
