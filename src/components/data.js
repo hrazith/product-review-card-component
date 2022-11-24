@@ -1,4 +1,4 @@
-export default [
+const data = [
   {
     category: "Perfume",
     name: "Gabrielle Essence Eau De Parfum",
@@ -10,3 +10,4 @@ export default [
     heroDesktop: "image-product-desktop.jpg",
   },
 ];
+export default data;
